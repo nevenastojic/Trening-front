@@ -1,0 +1,115 @@
+html{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: lightgray;
+    padding: 30px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+body{
+    width: auto;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+    height: 40px;
+    float: left;
+}
+
+.nav-header{
+    padding-top: 17px;
+    padding-right: 120px;
+}
+
+.search{
+    background-color: white;
+    float:right;
+    width: 200px;
+    height: 20px;
+    padding: 15px;
+    margin-top: -33px;
+}
+
+.icon-search{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.search-text{
+    margin-right: 130px;
+    font-size: smaller;
+    color: gray;
+}
+
+.title{
+  text-align: center;
+  margin: 40px;
+}
+
+.image-article-first-row{
+  float: right;
+  width: 150px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.article-title{
+  color: orange;
+}
+
+.box-first-row{
+  background-color: lightgray;
+  width: 471px;
+  height: 300px;
+  padding: 5px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.article-text-first-row{
+  text-align: justify;
+  margin-right: 160px;
+}
+
+.box-first-row a{
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.row{
+  margin-left: 390px;
+}
+
+.box-second-row{
+  background-color: lightgray;
+  width: 304px;
+  height: 350px;
+  padding: 5px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.article-title-second-row{
+  text-align: center;
+  color: orange;
+}
+
+.image-article-second-row{
+  width: 295px;
+  height: 120px;
+  margin-left: 5px;
+}
+
+.article-text-second-row{
+  text-align: justify;
+  margin: 5px;
+}
