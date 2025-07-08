@@ -1,72 +1,108 @@
-html{
-font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    background-color:  #eaeaea;
-    padding: 30px;
-    text-align: center;
-    padding-bottom: 45px;
+header {
+  background-color: #eaeaea;
+  padding: 30px;
+  text-align: center;
+  padding-bottom: 45px;
 }
 
-body{
-    width: auto;
-    margin: 0 auto;
+.nav-header {
+  padding: 20px 15px;
 }
 
-.logo{
-    width: 200px;
-    height: 40px;
-    float: left;
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-header{
-    padding-top: 17px;
-    padding-right: 120px;
+.nav-list li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sep { 
+  margin: 0 4px;
+}
+
+.logo img { 
+  width: 200px; 
+  height: 40px; 
+}
+
+body {
+  width: auto;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-top: -0.5%;
 }
 
 .search {
   position: relative;
 }
 
-.search-input{
-    float:right;
-    width: 200px;
-    height: 20px;
-    padding: 15px;
-    margin-top: -33px;
-    border: none;
+.search-input {
+  float: right;
+  width: 200px;
+  height: 20px;
+  padding: 15px;
+  margin-top: -33px;
+  border: none;
 }
 
-.icon-search{
-    width: 20px;
-    height: 20px;
-    float: right;
-    margin-right: -213px;
-    margin-top: -18px;
+.search-btn {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: -210px;
+  margin-top: -18px;
+  cursor:pointer;
+  border:none;
+  background:transparent;
 }
 
-.title{
+.icon-search {
+  width: 20px;
+  height: 20px;
+  display:block;
+  margin-right: -213px;
+  margin-top: -2px;
+}
+
+.title {
   text-align: center;
   margin: 40px;
   margin-right: 270px;
 }
 
-.image-article-first-row{
+.image-article-first-row {
   float: right;
   width: 150px;
   height: 120px;
   margin-bottom: 10px;
 }
 
-.article-title-first-row{
+.article-title-first-row {
   color: orange;
   margin-left: 90px;
+  font-size: 21px;
 }
 
-.box-first-row{
-  background-color:   #eaeaea;
-  width: 471px;
+.box-first-row {
+  background-color: #eaeaea;
+  width: 39%;
   height: 300px;
   padding: 5px;
   float: left;
@@ -75,24 +111,24 @@ body{
   position: relative;
 }
 
-.article-text-first-row{
+.article-text-first-row {
   text-align: justify;
   margin-right: 160px;
 }
 
-.box-first-row a{
+.box-first-row a {
   float: right;
   margin-bottom: 5px;
   margin-right: 5px;
 }
 
-.row{
-  margin-left: 390px;
+.row {
+  margin-left: 20%;
 }
 
-.box-second-row{
-  background-color:  #eaeaea;
-  width: 304px;
+.box-second-row {
+  background-color: #eaeaea;
+  width: 25.4%;
   height: 350px;
   padding: 5px;
   float: left;
@@ -100,29 +136,30 @@ body{
   margin-bottom: 20px;
 }
 
-.article-title-second-row{
+.article-title-second-row {
   text-align: center;
   color: orange;
+  font-size: 21px;
 }
 
-.image-article-second-row{
-  width: 295px;
+.image-article-second-row {
+  width: 96%;
   height: 120px;
   margin-left: 5px;
 }
 
-.article-text-second-row{
+.article-text-second-row {
   text-align: justify;
   margin: 5px;
 }
 
 .sidebar {
-  width: 240px;
+  width: 12%;
   background-color: #eaeaea;
   padding: 15px;
   float: left;
   margin-top: 78px;
-  margin-left: 70px;
+  margin-left: 4%;
   border-radius: 10px;
   padding-bottom: 0px;
 }
@@ -136,6 +173,7 @@ body{
 .menu-item {
   margin-bottom: 15px;
 }
+
 .menu-label {
   background-color: #a5a5a5;
   padding: 10px;
@@ -176,12 +214,11 @@ body{
   padding: 40px;
   margin-top: 30px;
   font-size: 14px;
-  height: 240px;
+  height: 20%;
 }
 
 .footer-columns {
-  margin-left: 300px;
-  margin-right: 80px;
+  margin-left: 20%;
   overflow: hidden;
   margin-bottom: 60px;
 }
