@@ -3,38 +3,44 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exlrt</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
+
   <header>
-    <nav class="nav-header">
-      <a href="#" class="logo">
-        <img src="images/logo.png" alt="logo exlrt">
+    <nav class="header">
+      <button class="header__burger" aria-label="Open menu">
+        <img src="images/icon-burger.png" alt="Menu">
+      </button>
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="EXLRT logo">
       </a>
-      <ul class="nav-list">
-        <li><a href="#">Platforms & Services</a></li>
+
+      <ul class="header__list">
+        <li><a href="#">Platforms &amp; Services</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Clients</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <form class="search">
-        <input type="text" placeholder="Search" class="search-input">
-        <button type="submit" class="search-btn">
-          <img src="images/icon-search.png" alt="icon-search" class="icon-search">
+
+      <form class="header__search">
+        <input type="text" class="header__search-input" placeholder="Search" />
+        <button type="submit" class="header__search-btn">
+          <img src="images/icon-search.png" alt="Search" />
         </button>
       </form>
     </nav>
   </header>
 
   <main class="layout">
-
     <aside class="sidebar">
-      <nav class="nav-side">
-        <ul class="menu">
+      <nav class="sidebar__menu">
+        <ul>
           <li class="menu-item">
             <div class="menu-label">
               <span>Kentico</span>
@@ -47,7 +53,7 @@
               <span class="plus">+</span>
             </div>
           </li>
-          <li class="menu-item-active">
+          <li class="menu-item menu-item--active">
             <div class="menu-label">
               <span>Tridion</span>
               <span class="plus">−</span>
@@ -69,14 +75,13 @@
       </nav>
     </aside>
 
-    <h1 class="title">United we excel</h1>
-
-    <div class="main-container">
+    <div class="layout__container">
+      <h1 class="layout__container-title">United we excel</h1>
       <div class="row">
-        <article class="box-first-row">
+        <article class="row__box-first">
           <h2 class="article-title-first-row">Disneyland Paris</h2>
-          <div class="image">
-            <img src="images/image-disney.jpg" alt="image disney" class="image-article-first-row">
+          <div class="image-article-first-row">
+            <img src="images/image-disney.jpg" alt="image disney">
           </div>
           <h3>Case Study</h3>
           <p class="article-text-first-row">The Disneyland Paris, originally The Euro Disney Resort, is an entertainment
@@ -85,10 +90,10 @@
           <a href="https://www.google.com">Read more</a>
         </article>
 
-        <article class="box-first-row">
+        <article class="row__box-first">
           <h2 class="article-title-first-row">Turkish Airlines</h2>
-          <div class="image">
-            <img src="images/image-turkish.jpg" alt="image Turkish" class="image-article-first-row">
+          <div class="image-article-first-row">
+            <img src="images/image-turkish.jpg" alt="image Turkish">
           </div>
           <h3>Case Study</h3>
           <p class="article-text-first-row">Turkish Airlines is the national airline of Turkey and flies to more than
@@ -100,7 +105,7 @@
       </div>
 
       <div class="row">
-        <div class="box-second-row">
+        <div class="row__box-second">
           <h2 class="article-title-second-row">ACI Universal Payments</h2>
           <div class="image">
             <img src="images/image-aci.jpg" alt="image aci" class="image-article-second-row">
@@ -112,7 +117,7 @@
             present and process bill payments, and manage fraud and risk. </p>
         </div>
 
-        <div class="box-second-row">
+        <div class="row__box-second">
           <h2 class="article-title-second-row">AEG</h2>
           <div class="image">
             <img src="images/image-aeg.jpg" alt="image aeg" class="image-article-second-row">
@@ -123,7 +128,7 @@
             music events and world-renowned festivals.</p>
         </div>
 
-        <div class="box-second-row">
+        <div class="row__box-second">
           <h2 class="article-title-second-row">IVC Evidensia</h2>
           <div class="image">
             <img src="images/image-evidensia.jpg" alt="image Evidensia" class="image-article-second-row">
@@ -143,7 +148,7 @@
   <div style="clear: both;"></div>
 
   <footer class="site-footer">
-    <div class="footer-columns">
+    <div class="site-footer__columns">
       <div class="footer-column">
         <h4>WHAT WE OFFER</h4>
         <ul>
@@ -179,7 +184,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="site-footer__bottom">
       2022 EXLRT, All rights Reserved
     </div>
   </footer>
