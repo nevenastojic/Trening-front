@@ -1,0 +1,58 @@
+@use "variables" as vars;
+
+.side-nav {
+  background: vars.$color-bg-light;
+  border-radius: 10px;
+  padding: 12px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    position: relative;
+    background: vars.$color-accent;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__item--active .side-nav__label {
+    background: vars.$color-primary;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__submenu {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #000;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+
+  &__item--active .side-nav__submenu {
+    display: block;
+  }
+}
