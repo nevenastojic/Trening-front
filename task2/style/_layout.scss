@@ -1,26 +1,25 @@
-@use "variables" as vars;
+@use "_mixins" as mix;
 
 .layout {
   position: relative;
   padding: 16px;
 }
 
-.layout__sidebar {
-  display: block;
-  width: 100%;
-  margin: 0 0 16px 0;
-}
-
-@media (min-width: vars.$bp-desktop) {
+@include mix.desktop {
   .layout__sidebar {
-    width: 12%;
+    width: 15%;
     position: absolute;
     left: 4%;
-    top: 78px;
+    top: 99px;
     margin: 0;
   }
 
   .layout__main {
     margin-left: 20%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: -11%;
   }
 }

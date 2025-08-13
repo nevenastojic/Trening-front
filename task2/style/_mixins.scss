@@ -1,0 +1,7 @@
+@use "_variables" as vars;
+
+@mixin desktop {
+  @media (min-width: vars.$desktop) {
+    @content;
+  }
+}

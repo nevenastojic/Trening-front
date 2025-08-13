@@ -1,0 +1,193 @@
+@use "_variables" as vars;
+@use "_mixins" as mix;
+
+.header {
+  background: vars.$color-bg-light;
+  position: relative;
+  color: vars.$color-text;
+
+  &__top {
+    position: relative;
+    padding: 10px 16px;
+    height: 50px;
+  }
+
+  &__burger {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 20px;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 120px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__nav {
+    background: vars.$color-accent;
+    padding: 12px 16px 8px;
+  }
+
+  &__menu {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 6px;
+    color: vars.$color-text;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &__search {
+    position: relative;
+    background: vars.$color-white;
+    padding: 8px 12px;
+    border-radius: 2px;
+  }
+}
+
+.search {
+  &__input {
+    width: 100%;
+    height: 36px;
+    padding: 0 36px 0 8px;
+    border: none;
+    background: vars.$color-white;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    opacity: .65;
+  }
+}
+
+@include mix.desktop {
+  .header {
+    padding: 30px 0 45px;
+
+    &__top {
+      padding: 0;
+      height: auto;
+    }
+
+    &__burger {
+      display: none;
+    }
+
+    &__logo {
+      position: absolute;
+      left: 35px;
+      right: auto;
+      top: 50%;
+      transform: translateY(20%);
+
+      img {
+        width: 160px;
+      }
+    }
+
+    &__nav {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 20px 15px;
+      margin: 0;
+      text-align: center;
+      position: relative;
+    }
+
+    &__menu {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 0 14px;
+      position: relative;
+      vertical-align: top;
+    }
+
+    &__link {
+      border: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    &__item {
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -14px;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background: vars.$color-text;
+      }
+    }
+
+    &__search {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      position: absolute;
+      right: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+  }
+
+  .search__input {
+    width: 200px;
+    height: 20px;
+    padding: 15px;
+    border: none;
+    background: vars.$color-white;
+  }
+
+  .search__btn {
+    right: 10px;
+  }
+}

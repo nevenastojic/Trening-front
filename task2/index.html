@@ -10,33 +10,33 @@
 
 <body>
   <header class="header">
-    <nav class="header__nav">
-      <a href="#" class="header__burger">
+    <div class="header__top">
+      <button class="header__burger" aria-label="Open menu"><span><img src="images/icon-burger.png"
+            alt="logo exlrt"></span></button>
+
+      <a href="#" class="header__logo">
         <img src="images/logo.png" alt="logo exlrt">
       </a>
-      <a href="#" class="header__logo">
-        <img src="images/icon-burger.png" alt="logo exlrt">
-      </a>
+    </div>
 
-      <div class="header__panel">
-        <ul class="header__menu">
-          <li class="header__item"><a class="header__link" href="https://www.exlrt.com/platforms-and-services">Platforms
-              &
-              Services</a></li>
-          <li class="header__item"><a class="header__link" href="https://www.exlrt.com/about">About Us</a></li>
-          <li class="header__item"><a class="header__link" href="https://www.exlrt.com/careers">Careers</a></li>
-          <li class="header__item"><a class="header__link" href="https://www.exlrt.com/clients">Clients</a></li>
-          <li class="header__item"><a class="header__link" href="https://www.exlrt.com/blog">Blog</a></li>
-          <li class="header__item"><a class="header__link" href="https://www.exlrt.com/contact">Contact</a></li>
-        </ul>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a class="header__link" href="https://www.exlrt.com/platforms-and-services">Platforms
+            &
+            Services</a></li>
+        <li class="header__item"><a class="header__link" href="https://www.exlrt.com/about">About Us</a></li>
+        <li class="header__item"><a class="header__link" href="https://www.exlrt.com/careers">Careers</a></li>
+        <li class="header__item"><a class="header__link" href="https://www.exlrt.com/clients">Clients</a></li>
+        <li class="header__item"><a class="header__link" href="https://www.exlrt.com/blog">Blog</a></li>
+        <li class="header__item"><a class="header__link" href="https://www.exlrt.com/contact">Contact</a></li>
+      </ul>
 
-        <form class="header__search search">
-          <input type="text" placeholder="Search" class="search__input">
-          <button type="submit" class="search__btn">
-            <img src="images/icon-search.png" alt="icon-search" class="search__icon">
-          </button>
-        </form>
-      </div>
+      <form class="header__search search">
+        <input type="text" placeholder="Search" class="search__input">
+        <button type="submit" class="search__btn">
+          <img src="images/icon-search.png" alt="icon-search" class="search__icon">
+        </button>
+      </form>
     </nav>
   </header>
 
@@ -79,39 +79,41 @@
     </aside>
 
     <main class="layout__main">
-      <h1 class="page-title">United we excel</h1>
+      <h1>United we excel</h1>
 
       <div class="main-container">
-        <div class="cards cards--top">
-          <article class="card card--wide">
-            <h2 class="card__title">Disneyland Paris</h2>
-            <div class="card__image">
+        <div class="cards cards--two">
+          <article class="card">
+            <h2 class="card__title card__title--left">Disneyland Paris</h2>
+            <div class="card__image card__image--right ">
               <img src="images/image-disney.jpg" alt="image disney">
             </div>
-            <h3 class="card__info">Case Study</h3>
-            <p class="card__text">The Disneyland Paris, originally The Euro Disney Resort, is an entertainment
+            <h3 class="card__info card__info--left">Case Study</h3>
+            <p class="card__text card__text--left">The Disneyland Paris, originally The Euro Disney Resort, is an
+              entertainment
               resort in Paris, and it is the most visited theme park in the whole France and Europe.</p>
-            <a class="card__link" href="https://www.google.com">Read more</a>
+            <a class="card__link card__link--right" href="https://www.google.com">Read more</a>
           </article>
 
-          <article class="card card--wide">
-            <h2 class="card__title">Turkish Airlines</h2>
-            <div class="card__image">
+          <article class="card">
+            <h2 class="card__title card__title--right">Turkish Airlines</h2>
+            <div class="card__image card__image--left">
               <img src="images/image-turkish.jpg" alt="image Turkish">
             </div>
-            <h3 class="card__info">Case Study</h3>
-            <p class="card__text">Turkish Airlines is the national airline of Turkey and flies to more than 200
+            <h3 class="card__info card__info--right">Case Study</h3>
+            <p class="card__text card__text--right">Turkish Airlines is the national airline of Turkey and flies to more
+              than 200
               destinations worldwide.
               A member of the Star Alliance, Turkish was named by Skytrax as “Best Airline Europe” in 2011 and 2012,
               and has also won the “Best Premium Economy Seats” for its Comfort Class seats.</p>
-            <a class="card__link" href="https://www.google.com">Read more</a>
+            <a class="card__link card__link--left" href="https://www.google.com">Read more</a>
           </article>
         </div>
 
-        <div class="cards cards--bottom">
+        <div class="cards cards--three">
           <div class="card">
             <h2 class="card__title">ACI Universal Payments</h2>
-            <div class="card__img">
+            <div class="card__img card__img--up">
               <img src="images/image-aci.jpg" alt="image aci">
             </div>
             <p class="card__text">ACI Worldwide — the leader in real-time payments — delivers the mission-critical
@@ -123,18 +125,22 @@
 
           <div class="card">
             <h2 class="card__title">AEG</h2>
-            <div class="card__img">
+            <div class="card__img card__img--desktop">
               <img src="images/image-aeg.jpg" alt="image aeg">
             </div>
+
             <p class="card__text">AEG Presents is one of the largest live music companies in the world. The company is
               dedicated to all aspects of
               live contemporary music performances, including producing and promoting global and regional concert tours,
               music events and world-renowned festivals.</p>
+            <div class="card__img card__img--mobile">
+              <img src="images/image-aeg.jpg" alt="image aeg">
+            </div>
           </div>
 
           <div class="card">
             <h2 class="card__title">IVC Evidensia</h2>
-            <div class="card__img">
+            <div class="card__img card__img--up">
               <img src="images/image-evidensia.jpg" alt="image Evidensia">
             </div>
             <p class="card__text">IVC Evidensia is the leading global veterinary care provider comprising an
@@ -147,44 +153,44 @@
     </main>
   </div>
 
-  <footer class="site-footer">
-    <div class="site-footer__columns">
-      <div class="site-footer__column">
-        <h4 class="site-footer__title">WHAT WE OFFER</h4>
-        <ul class="site-footer__list">
-          <li><a class="site-footer__link" href="#">RWS Tridion</a></li>
-          <li><a class="site-footer__link" href="#">Custom Development</a></li>
-          <li><a class="site-footer__link" href="#">Kentico</a></li>
-          <li><a class="site-footer__link" href="#">Sitecore</a></li>
+  <footer>
+    <div class="footer">
+      <div class="footer__column">
+        <h4 class="footer__title">WHAT WE OFFER</h4>
+        <ul class="footer-list">
+          <li><a class="footer-list__link" href="#">RWS Tridion</a></li>
+          <li><a class="footer-list__link" href="#">Custom Development</a></li>
+          <li><a class="footer-list__link" href="#">Kentico</a></li>
+          <li><a class="footer-list__link" href="#">Sitecore</a></li>
         </ul>
       </div>
-      <div class="site-footer__column">
-        <h4 class="site-footer__title">ABOUT US</h4>
-        <ul class="site-footer__list">
-          <li><a class="site-footer__link" href="#">Company</a></li>
-          <li><a class="site-footer__link" href="#">Leadership</a></li>
-          <li><a class="site-footer__link" href="#">Partners</a></li>
+      <div class="footer__column">
+        <h4 class="footer__title">ABOUT US</h4>
+        <ul class="footer-list">
+          <li><a class="footer-list__link" href="#">Company</a></li>
+          <li><a class="footer-list__link" href="#">Leadership</a></li>
+          <li><a class="footer-list__link" href="#">Partners</a></li>
         </ul>
       </div>
-      <div class="site-footer__column">
-        <h4 class="site-footer__title">CAREERS</h4>
-        <ul class="site-footer__list">
-          <li><a class="site-footer__link" href="#">Why work at EXLRT</a></li>
-          <li><a class="site-footer__link" href="#">Job openings</a></li>
-          <li><a class="site-footer__link" href="#">Application procedure</a></li>
-          <li><a class="site-footer__link" href="#">Terms of employment</a></li>
+      <div class="footer__column footer__column--hidden-mobile">
+        <h4 class="footer__title">CAREERS</h4>
+        <ul class="footer-list">
+          <li><a class="footer-list__link" href="#">Why work at EXLRT</a></li>
+          <li><a class="footer-list__link" href="#">Job openings</a></li>
+          <li><a class="footer-list__link" href="#">Application procedure</a></li>
+          <li><a class="footer-list__link" href="#">Terms of employment</a></li>
         </ul>
       </div>
-      <div class="site-footer__column">
-        <h4 class="site-footer__title">CONTACT</h4>
-        <ul class="site-footer__list">
-          <li><a class="site-footer__link" href="#">Location</a></li>
-          <li><a class="site-footer__link" href="#">Contact us</a></li>
-          <li><a class="site-footer__link" href="#">Ask a question</a></li>
+      <div class="footer__column footer__column--hidden-mobile">
+        <h4 class="footer__title">CONTACT</h4>
+        <ul class="footer-list">
+          <li><a class="footer-list__link" href="#">Location</a></li>
+          <li><a class="footer-list__link" href="#">Contact us</a></li>
+          <li><a class="footer-list__link" href="#">Ask a question</a></li>
         </ul>
       </div>
     </div>
-    <div class="site-footer__bottom">
+    <div class="footer-bottom">
       2022 EXLRT, All rights Reserved
     </div>
   </footer>
