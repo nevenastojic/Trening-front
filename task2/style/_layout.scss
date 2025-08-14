@@ -1,0 +1,25 @@
+@use "_mixins" as mix;
+
+.layout {
+  position: relative;
+  padding: 16px;
+}
+
+@include bp($bp-desktop) {
+  .layout__sidebar {
+    width: 15%;
+    position: absolute;
+    left: 4%;
+    top: 99px;
+    margin: 0;
+  }
+
+  .layout__main {
+    margin-left: 20%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: -11%;
+  }
+}

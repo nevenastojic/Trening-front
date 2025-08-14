@@ -1,0 +1,26 @@
+@use "_variables" as vars;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: vars.$color-text;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  margin: 24px 0;
+  width: 100%;
+}
