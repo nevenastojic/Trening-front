@@ -13,7 +13,7 @@
   }
 }
 
-@include mix.desktop {
+@include bp($bp-desktop) {
   .layout__sidebar {
     display: block;
     background: vars.$color-bg-light;

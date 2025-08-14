@@ -5,7 +5,7 @@
   padding: 16px;
 }
 
-@include mix.desktop {
+@include bp($bp-desktop) {
   .layout__sidebar {
     width: 15%;
     position: absolute;

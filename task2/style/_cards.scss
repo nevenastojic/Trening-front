@@ -128,7 +128,7 @@
   }
 }
 
-@include mix.desktop {
+@include bp($bp-desktop) {
   .cards {
     margin-bottom: 16px;
   }

@@ -1,7 +1,5 @@
-@use "_variables" as vars;
-
-@mixin desktop {
-  @media (min-width: vars.$desktop) {
+@mixin bp($breakpoint) {
+  @media (min-width: $breakpoint) {
     @content;
   }
 }

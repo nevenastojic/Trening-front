@@ -52,7 +52,7 @@ footer {
   display: none;
 }
 
-@include mix.desktop {
+@include bp($bp-desktop) {
   .footer {
     font-size: 0;
     padding: 40px 24px 12px;

@@ -102,7 +102,7 @@
   }
 }
 
-@include mix.desktop {
+@include bp($bp-desktop) {
   .header {
     padding: 30px 0 45px;
 
